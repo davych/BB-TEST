@@ -1,23 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
-
+import Typography from '@material-ui/core/Typography';
+import Button from '@material-ui/core/Button';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Typography variant="h3">Responsive h3</Typography>
+          <Button variant="contained" color="primary">
+      你好，世界
+    </Button>
     </div>
   );
 }
