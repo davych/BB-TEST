@@ -5,9 +5,9 @@ function App() {
   return (
     <div className="App">
       <Typography variant="h3">Responsive h3</Typography>
-          <Button variant="contained" color="primary">
-      你好，世界
-    </Button>
+      <Button variant="contained" color="primary">
+        你好，世界
+      </Button>
     </div>
   );
 }
