@@ -1,8 +1,8 @@
 import React from 'react';
-import Detail from './Detail';
 import { Switch, Route } from 'react-router-dom';
+import Detail from './Detail';
 
-export default function BasicExample() {
+export default function Home() {
   return (
     <Switch>
       <Route exact path="/">
