@@ -5,7 +5,7 @@ import Detail from './Detail';
 export default function Home() {
   return (
     <Switch>
-      <Route exact path="/">
+      <Route exact path="/:id">
         <Detail />
       </Route>
     </Switch>

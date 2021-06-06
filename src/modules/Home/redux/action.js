@@ -1,4 +1,4 @@
 export default {
-  get: 'HOME_GET',
-  set: 'HOME_SET',
+  get: 'TVSHOW_GET',
+  set: 'TVSHOW_SET',
 };
