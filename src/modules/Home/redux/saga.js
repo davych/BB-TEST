@@ -1,8 +1,8 @@
 import { put, takeEvery, call } from 'redux-saga/effects';
 import action from './action';
-import * as homeServices from '../services';
+import homeServices from '../services';
 import { requestStatus } from '@/common';
-function* getTVShow({ id }) {
+export function* getTVShow({ id }) {
   try {
     yield put({ type: action.set, payload: requestStatus.fetching() });
     const res = yield call(homeServices.getTVShow, id);
