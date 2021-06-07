@@ -7,13 +7,13 @@ import { MemoryRouter } from 'react-router-dom';
 import { requestStatus } from '@/common';
 const mockStore = configureMockStore();
 const store = mockStore({
-  TVShow: {
+  Episode: {
     data: {},
     ...requestStatus.none,
   },
 });
 
-test('renders home detail', () => {
+test('renders episode detail', () => {
   const app = render(
     <Provider store={store}>
       <MemoryRouter initialEntries={['/1']} initialIndex={1}>

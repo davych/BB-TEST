@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders episode list item 1`] = `<DocumentFragment />`;
+
+exports[`renders episode list item with width 599 1`] = `
+<DocumentFragment>
+  <a
+    class="MuiTypography-root MuiLink-root MuiLink-underlineHover makeStyles-link-1 MuiTypography-colorPrimary"
+    to="/eposide/undefined"
+  >
+    <div
+      class="MuiPaper-root MuiCard-root makeStyles-root-2 MuiPaper-elevation1 MuiPaper-rounded"
+    >
+      <div
+        class="MuiCardMedia-root makeStyles-cover-5"
+      />
+      <div
+        class="makeStyles-details-3"
+      >
+        <div
+          class="MuiCardContent-root makeStyles-content-4"
+        >
+          <h5
+            class="MuiTypography-root makeStyles-title-6 MuiTypography-h5 MuiTypography-noWrap"
+          />
+          <h6
+            class="MuiTypography-root MuiTypography-subtitle1 MuiTypography-colorTextSecondary"
+          >
+            <div
+              class="makeStyles-ellipsisMulti-7"
+            />
+          </h6>
+        </div>
+      </div>
+    </div>
+  </a>
+</DocumentFragment>
+`;
+
+exports[`renders episode list item with width 601 1`] = `
+<DocumentFragment>
+  <a
+    class="MuiTypography-root MuiLink-root MuiLink-underlineHover makeStyles-link-8 MuiTypography-colorPrimary"
+    to="/eposide/undefined"
+  >
+    <div
+      class="MuiPaper-root MuiCard-root makeStyles-root-9 MuiPaper-elevation1 MuiPaper-rounded"
+    >
+      <div
+        class="MuiCardMedia-root makeStyles-cover-12"
+      />
+      <div
+        class="makeStyles-details-10"
+      >
+        <div
+          class="MuiCardContent-root makeStyles-content-11"
+        >
+          <h5
+            class="MuiTypography-root makeStyles-title-13 MuiTypography-h5 MuiTypography-noWrap"
+          />
+          <h6
+            class="MuiTypography-root MuiTypography-subtitle1 MuiTypography-colorTextSecondary"
+          >
+            <div
+              class="makeStyles-ellipsisMulti-14"
+            />
+          </h6>
+        </div>
+      </div>
+    </div>
+  </a>
+</DocumentFragment>
+`;
