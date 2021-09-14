@@ -16,7 +16,7 @@ const Detail = (props) => {
   return (
     <Grid container>
       <Grid item sm={6}>
-        test
+        test-remove
         <CardPanel data={props.Episode.data || {}} />
       </Grid>
     </Grid>
