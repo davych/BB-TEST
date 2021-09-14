@@ -1,4 +1,4 @@
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/core/styles'
 
 export default makeStyles((theme) => ({
   link: {
@@ -39,4 +39,4 @@ export default makeStyles((theme) => ({
       '-webkit-box-orient': 'vertical',
     },
   },
-}));
+}))

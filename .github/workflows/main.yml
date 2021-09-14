@@ -1,0 +1,64 @@
+name: main
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+
+      - name: Install yarn 
+        run: npm install yarn@1.22.1 -g
+
+      - name: Show yarn version
+        run: yarn -v
+
+      - name: yarn install dependency
+        run: yarn
+
+      - name: Run unit tests
+        run: yarn test
+
+      - name: lint ts
+        run: yarn lint:ts
+
+      - name: lint types
+        run: yarn lint:types
+
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      NODE_ENV: production
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+
+      - name: Install yarn 
+        run: npm install yarn@1.22.1 -g
+
+      - name: Show yarn version
+        run: yarn -v
+
+      - name: yarn install dependency
+        run: yarn install --production=false
+
+      - name: run build
+        run: yarn build

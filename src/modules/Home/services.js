@@ -1,6 +1,7 @@
-import { request } from '@/common';
+import { request } from '@/common'
 
-const getTVShow = (id) => request.get(`shows/${id}`, { params: { embed: 'episodes' } });
+const getTVShow = (id) =>
+  request.get(`shows/${id}`, { params: { embed: 'episodes' } })
 export default {
   getTVShow,
-};
+}

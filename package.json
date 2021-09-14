@@ -27,7 +27,9 @@
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
     "test": "react-app-rewired test --collectCoverage --color --watchAll",
-    "eject": "react-app-rewired eject"
+    "eject": "react-app-rewired eject",
+    "lint": "eslint . --ext .js",
+    "lint:fix": "eslint . --ext .js --fix && prettier --write **/*.{js,jsx}"
   },
   "jest": {
     "moduleNameMapper": {
