@@ -1,3 +1,3 @@
-import request, { requestStatus } from './request'
+import request, { requestStatus } from './request';
 
-export { request, requestStatus }
+export { request, requestStatus };

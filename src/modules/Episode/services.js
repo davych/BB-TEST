@@ -1,3 +1,3 @@
-import { request } from '@/common'
+import { request } from '@/common';
 
-export const getEpisode = (id) => request.get(`episodes/${id}`)
+export const getEpisode = (id) => request.get(`episodes/${id}`);

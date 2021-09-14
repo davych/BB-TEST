@@ -1,9 +1,9 @@
-;(this.webpackJsonptest = this.webpackJsonptest || []).push([
+(this.webpackJsonptest = this.webpackJsonptest || []).push([
   [0],
   {
     112: function (e, t, n) {
-      'use strict'
-      n.r(t)
+      'use strict';
+      n.r(t);
       var a = n(0),
         c = n(26),
         r = n.n(c),
@@ -55,7 +55,7 @@
                 '-webkit-box-orient': 'vertical',
               },
             },
-          }
+          };
         }),
         E = n(138),
         H = n(3),
@@ -65,7 +65,7 @@
             a,
             c,
             r,
-            i = T()
+            i = T();
           return Object(H.jsx)(E.a, {
             className: i.link,
             to: '/eposide/'.concat(e.data.id),
@@ -118,14 +118,14 @@
                 }),
               ],
             }),
-          })
+          });
         }),
         P = Object(v.a)()(function (e) {
           return Object(H.jsx)(m.a, {
             children: e.episodes.map(function (e) {
-              return Object(H.jsx)(N, { data: e }, e.id)
+              return Object(H.jsx)(N, { data: e }, e.id);
             }),
-          })
+          });
         }),
         V = n(142),
         _ = n(143),
@@ -137,7 +137,7 @@
               top: 0,
             }),
             media: { backgroundSize: 'contain', height: '50vh' },
-          }
+          };
         }),
         F = Object(v.a)()(function (e) {
           var t,
@@ -146,7 +146,7 @@
             c,
             r,
             i,
-            s = q()
+            s = q();
           return Object(H.jsx)(w.a, {
             className: s.root,
             children: Object(H.jsxs)(V.a, {
@@ -194,7 +194,7 @@
                 e.actions ? Object(H.jsx)(_.a, { children: e.actions }) : null,
               ],
             }),
-          })
+          });
         }),
         z = n(144),
         M = n(67),
@@ -203,14 +203,14 @@
         L = n.n(C),
         W = Object(f.b)(
           function (e) {
-            return { TVShow: e.TVShow }
+            return { TVShow: e.TVShow };
           },
           function (e) {
             return {
               getTVShow: function (t) {
-                return e({ type: p, id: t })
+                return e({ type: p, id: t });
               },
-            }
+            };
           },
         )(function (e) {
           var t = Object(j.h)().id,
@@ -221,26 +221,26 @@
                   children: [
                     Object(H.jsx)(z.a, {
                       onClick: function () {
-                        return n.push('/'.concat(parseInt(t) - 1))
+                        return n.push('/'.concat(parseInt(t) - 1));
                       },
                       disabled: 1 === parseInt(t),
                       children: Object(H.jsx)(L.a, { fontSize: 'large' }),
                     }),
                     Object(H.jsx)(z.a, {
                       onClick: function () {
-                        return n.push('/'.concat(parseInt(t) + 1))
+                        return n.push('/'.concat(parseInt(t) + 1));
                       },
                       children: Object(H.jsx)(D.a, { fontSize: 'large' }),
                     }),
                   ],
-                })
+                });
               },
               [t],
-            )
+            );
           return (
             Object(a.useEffect)(
               function () {
-                e.getTVShow(t)
+                e.getTVShow(t);
               },
               [t],
             ),
@@ -265,8 +265,8 @@
                 }),
               ],
             })
-          )
-        })
+          );
+        });
       function B() {
         return Object(H.jsx)(j.d, {
           children: Object(H.jsx)(j.b, {
@@ -274,26 +274,26 @@
             path: '/:id',
             children: Object(H.jsx)(W, {}),
           }),
-        })
+        });
       }
       var G = 'EPISODE_GET',
         J = 'EPISODE_SET',
         R = Object(f.b)(
           function (e) {
-            return { Episode: e.Episode }
+            return { Episode: e.Episode };
           },
           function (e) {
             return {
               getEpisode: function (t) {
-                return e({ type: G, id: t })
+                return e({ type: G, id: t });
               },
-            }
+            };
           },
         )(function (e) {
-          var t = Object(j.h)().id
+          var t = Object(j.h)().id;
           return (
             Object(a.useEffect)(function () {
-              e.getEpisode(t)
+              e.getEpisode(t);
             }, []),
             Object(H.jsx)(b.a, {
               container: !0,
@@ -303,8 +303,8 @@
                 children: Object(H.jsx)(F, { data: e.Episode.data || {} }),
               }),
             })
-          )
-        })
+          );
+        });
       function U() {
         return Object(H.jsx)(j.d, {
           children: Object(H.jsx)(j.b, {
@@ -312,7 +312,7 @@
             path: '/eposide/:id',
             children: Object(H.jsx)(R, {}),
           }),
-        })
+        });
       }
       function A() {
         return Object(H.jsxs)(l.a, {
@@ -321,7 +321,7 @@
             Object(H.jsx)(B, {}),
             Object(H.jsx)(U, {}),
           ],
-        })
+        });
       }
       var K = n(29),
         Q = n(73),
@@ -338,7 +338,7 @@
             var t =
               arguments.length > 0 && void 0 !== arguments[0]
                 ? arguments[0]
-                : {}
+                : {};
             return (
               Object(ee.a)(this, e),
               (this.HTTPService = ae.a.create({
@@ -354,7 +354,7 @@
                 t.responseFail || this.responseFail,
               ),
               this.HTTPService
-            )
+            );
           }
           return (
             Object(te.a)(e, [
@@ -367,52 +367,52 @@
                         for (;;)
                           switch ((e.prev = e.next)) {
                             case 0:
-                              return e.abrupt('return', t)
+                              return e.abrupt('return', t);
                             case 1:
                             case 'end':
-                              return e.stop()
+                              return e.stop();
                           }
-                      }, e)
+                      }, e);
                     }),
-                  )
+                  );
                   return function (t) {
-                    return e.apply(this, arguments)
-                  }
+                    return e.apply(this, arguments);
+                  };
                 })(),
               },
               {
                 key: 'requestFail',
                 value: function (e) {
-                  return Promise.reject(e)
+                  return Promise.reject(e);
                 },
               },
               {
                 key: 'responseSuccess',
                 value: function (e) {
-                  return e
+                  return e;
                 },
               },
               {
                 key: 'responseFail',
                 value: function (e) {
-                  return Promise.reject(e)
+                  return Promise.reject(e);
                 },
               },
             ]),
             e
-          )
+          );
         })())(),
         re = function () {
-          return { status: 'none', isloading: !1, error: '' }
+          return { status: 'none', isloading: !1, error: '' };
         },
         ie = function () {
-          return { status: 'fetching', isloading: !0, error: '' }
+          return { status: 'fetching', isloading: !0, error: '' };
         },
         se = function () {
-          return { status: 'success', isloading: !1, error: '' }
+          return { status: 'success', isloading: !1, error: '' };
         },
         oe = function (e) {
-          return { status: 'failure', isloading: !1, error: e }
+          return { status: 'failure', isloading: !1, error: e };
         },
         ue = ce,
         de = Object(X.a)({ data: {} }, re),
@@ -423,12 +423,12 @@
                 : de,
             t = arguments.length > 1 ? arguments[1] : void 0,
             n = t.type,
-            a = t.payload
+            a = t.payload;
           switch (n) {
             case O:
-              return Object(X.a)(Object(X.a)({}, e), a)
+              return Object(X.a)(Object(X.a)({}, e), a);
             default:
-              return e
+              return e;
           }
         },
         je = Object(X.a)({ data: {} }, re),
@@ -439,23 +439,23 @@
                 : je,
             t = arguments.length > 1 ? arguments[1] : void 0,
             n = t.type,
-            a = t.payload
+            a = t.payload;
           switch (n) {
             case J:
-              return Object(X.a)(Object(X.a)({}, e), a)
+              return Object(X.a)(Object(X.a)({}, e), a);
             default:
-              return e
+              return e;
           }
         },
         pe = Object(K.b)({ TVShow: le, Episode: be }),
         Oe = n(17),
         he = function (e) {
-          return ue.get('shows/'.concat(e), { params: { embed: 'episodes' } })
+          return ue.get('shows/'.concat(e), { params: { embed: 'episodes' } });
         },
         xe = Z.a.mark(ve),
-        fe = Z.a.mark(me)
+        fe = Z.a.mark(me);
       function ve(e) {
-        var t, n
+        var t, n;
         return Z.a.wrap(
           function (a) {
             for (;;)
@@ -466,9 +466,9 @@
                     (a.prev = 1),
                     (a.next = 4),
                     Object(Oe.c)({ type: O, payload: ie() })
-                  )
+                  );
                 case 4:
-                  return (a.next = 6), Object(Oe.b)(he, t)
+                  return (a.next = 6), Object(Oe.b)(he, t);
                 case 6:
                   return (
                     (n = a.sent),
@@ -481,46 +481,46 @@
                         { data: n.data },
                       ),
                     })
-                  )
+                  );
                 case 9:
-                  a.next = 15
-                  break
+                  a.next = 15;
+                  break;
                 case 11:
                   return (
                     (a.prev = 11),
                     (a.t0 = a.catch(1)),
                     (a.next = 15),
                     Object(Oe.c)({ type: O, payload: oe(a.t0.message) })
-                  )
+                  );
                 case 15:
                 case 'end':
-                  return a.stop()
+                  return a.stop();
               }
           },
           xe,
           null,
           [[1, 11]],
-        )
+        );
       }
       function me() {
         return Z.a.wrap(function (e) {
           for (;;)
             switch ((e.prev = e.next)) {
               case 0:
-                return (e.next = 2), Object(Oe.d)(p, ve)
+                return (e.next = 2), Object(Oe.d)(p, ve);
               case 2:
               case 'end':
-                return e.stop()
+                return e.stop();
             }
-        }, fe)
+        }, fe);
       }
       var ge = function (e) {
-          return ue.get('episodes/'.concat(e))
+          return ue.get('episodes/'.concat(e));
         },
         we = Z.a.mark(Se),
-        ye = Z.a.mark(ke)
+        ye = Z.a.mark(ke);
       function Se(e) {
-        var t, n
+        var t, n;
         return Z.a.wrap(
           function (a) {
             for (;;)
@@ -531,9 +531,9 @@
                     (a.prev = 1),
                     (a.next = 4),
                     Object(Oe.c)({ type: J, payload: ie() })
-                  )
+                  );
                 case 4:
-                  return (a.next = 6), Object(Oe.b)(ge, t)
+                  return (a.next = 6), Object(Oe.b)(ge, t);
                 case 6:
                   return (
                     (n = a.sent),
@@ -546,57 +546,57 @@
                         { data: n.data },
                       ),
                     })
-                  )
+                  );
                 case 9:
-                  a.next = 15
-                  break
+                  a.next = 15;
+                  break;
                 case 11:
                   return (
                     (a.prev = 11),
                     (a.t0 = a.catch(1)),
                     (a.next = 15),
                     Object(Oe.c)({ type: J, payload: oe(a.t0.message) })
-                  )
+                  );
                 case 15:
                 case 'end':
-                  return a.stop()
+                  return a.stop();
               }
           },
           we,
           null,
           [[1, 11]],
-        )
+        );
       }
       function ke() {
         return Z.a.wrap(function (e) {
           for (;;)
             switch ((e.prev = e.next)) {
               case 0:
-                return (e.next = 2), Object(Oe.d)(G, Se)
+                return (e.next = 2), Object(Oe.d)(G, Se);
               case 2:
               case 'end':
-                return e.stop()
+                return e.stop();
             }
-        }, ye)
+        }, ye);
       }
-      var Te = Z.a.mark(Ee)
+      var Te = Z.a.mark(Ee);
       function Ee() {
         return Z.a.wrap(function (e) {
           for (;;)
             switch ((e.prev = e.next)) {
               case 0:
-                return (e.next = 2), Object(Oe.a)([me(), ke()])
+                return (e.next = 2), Object(Oe.a)([me(), ke()]);
               case 2:
               case 'end':
-                return e.stop()
+                return e.stop();
             }
-        }, Te)
+        }, Te);
       }
       var He = Object(Q.a)(),
         Ne = [He],
-        Pe = Object(K.d)(pe, K.a.apply(void 0, Ne))
-      He.run(Ee)
-      var Ve = Pe
+        Pe = Object(K.d)(pe, K.a.apply(void 0, Ne));
+      He.run(Ee);
+      var Ve = Pe;
       r.a.render(
         Object(H.jsx)(f.a, {
           store: Ve,
@@ -606,10 +606,10 @@
           }),
         }),
         document.getElementById('root'),
-      )
+      );
     },
     85: function (e, t, n) {},
   },
   [[112, 1, 2]],
-])
+]);
 //# sourceMappingURL=main.efa9d81c.chunk.js.map

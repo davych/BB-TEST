@@ -1,15 +1,15 @@
-import React, { useEffect } from 'react'
-import PropTypes from 'prop-types'
-import withWidth, { isWidthUp } from '@material-ui/core/withWidth'
-import Typography from '@material-ui/core/Typography'
-import Card from '@material-ui/core/Card'
-import CardContent from '@material-ui/core/CardContent'
-import CardMedia from '@material-ui/core/CardMedia'
-import useStyles from './styles'
-import Link from '@material-ui/core/Link'
+import React, { useEffect } from 'react';
+import PropTypes from 'prop-types';
+import withWidth, { isWidthUp } from '@material-ui/core/withWidth';
+import Typography from '@material-ui/core/Typography';
+import Card from '@material-ui/core/Card';
+import CardContent from '@material-ui/core/CardContent';
+import CardMedia from '@material-ui/core/CardMedia';
+import useStyles from './styles';
+import Link from '@material-ui/core/Link';
 
 const EpisodeListItem = (props) => {
-  const classes = useStyles()
+  const classes = useStyles();
   return (
     <Link className={classes.link} to={`/eposide/${props.data.id}`}>
       <Card className={classes.root}>
@@ -41,12 +41,12 @@ const EpisodeListItem = (props) => {
         </div>
       </Card>
     </Link>
-  )
-}
+  );
+};
 
 EpisodeListItem.propTypes = {
   data: PropTypes.object,
   width: PropTypes.any,
-}
+};
 
-export default withWidth()(EpisodeListItem)
+export default withWidth()(EpisodeListItem);

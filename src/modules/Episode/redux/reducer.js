@@ -1,17 +1,17 @@
-import action from './action'
-import { requestStatus } from '@/common'
+import action from './action';
+import { requestStatus } from '@/common';
 const store = {
   data: {},
   ...requestStatus.none,
-}
+};
 
 const Episode = (state = store, { type, payload }) => {
   switch (type) {
     case action.set:
-      return { ...state, ...payload }
+      return { ...state, ...payload };
     default:
-      return state
+      return state;
   }
-}
+};
 
-export default Episode
+export default Episode;
