@@ -29,15 +29,12 @@ jobs:
       - name: yarn install dependency
         run: yarn
 
+      
+      - name: lint
+        run: yarn lint
+
       - name: Run unit tests
         run: yarn test
-
-      - name: lint ts
-        run: yarn lint:ts
-
-      - name: lint types
-        run: yarn lint:types
-
   build:
     runs-on: ubuntu-latest
     timeout-minutes: 10
