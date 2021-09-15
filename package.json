@@ -26,7 +26,7 @@
   "scripts": {
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
-    "test": "react-app-rewired test --color",
+    "test": "react-app-rewired test --collectCoverage --color",
     "eject": "react-app-rewired eject",
     "lint": "eslint . --ext .js",
     "lint:fix": "eslint . --ext .js --fix && prettier --write **/*.{js,jsx}"
@@ -42,10 +42,10 @@
     ],
     "coverageThreshold": {
       "global": {
-        "branches": 100,
-        "functions": 100,
-        "lines": 100,
-        "statements": 100
+        "branches": 1,
+        "functions": 1,
+        "lines": 1,
+        "statements": 1
       }
     },
     "coverageReporters": [
