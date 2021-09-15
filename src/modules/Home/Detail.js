@@ -38,6 +38,7 @@ const Detail = (props) => {
 
   return (
     <Grid container>
+      This is demo for the CI
       <Grid item sm={6}>
         <CardPanel data={props.TVShow.data || {}} actions={Actions} />
       </Grid>
